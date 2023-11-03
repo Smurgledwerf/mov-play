@@ -34,10 +34,12 @@ PRECISION = 765.0 / len(VALUES)
 CODE = ""
 
 
-def main(files, ascii_mode=False, extract_audio=True, cleanup=True, fps=None, resolution=None, audio=None, loop=False, debug=False):
+def main(files, ascii_mode=False, extract_audio=True, cleanup=True, fps=None,
+         resolution=None, audio=None, loop=False, debug=False):
     """Play a movie in your (git-bash) terminal!
 
-    :param list[str] files: list of paths to movie files, or 1 .bz2 file which will decompress and play
+    :param list[str] files: list of paths to movie files, or 1 .bz2 file
+        which will decompress and play
     :param bool ascii_mode: use ascii mode when converting
     :param bool extract_audio: extract audio from the mov files
     :param bool cleanup: cleanup the temp data
